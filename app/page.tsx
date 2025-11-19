@@ -56,11 +56,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
             <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6">
-              Bringing People Together
-              <span className="block text-brand-secondary mt-2">Through Amazing Events</span>
+              Your Trusted Event Services
+              <span className="block text-brand-secondary mt-2">Marketplace in Saudi Arabia</span>
             </h2>
             <p className="text-xl sm:text-2xl text-gray-600 mb-10 max-w-3xl mx-auto">
-              Azimah Tech (عزيمة - Gathering) - Your premier event marketplace connecting providers with customers across Saudi Arabia. Discover concerts, conferences, workshops, and unforgettable experiences.
+              Connect with verified service providers for all your event needs - from catering and furniture to transportation and camping equipment. Making your events extraordinary, one click at a time.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -78,11 +78,51 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Hero Image Placeholder */}
-          <div className="mt-16 relative">
-            <div className="bg-gradient-to-r from-brand-primary to-brand-accent rounded-2xl shadow-2xl p-8 aspect-video flex items-center justify-center">
-              <p className="text-white text-2xl font-semibold">App Screenshot Coming Soon</p>
+          {/* App Screenshots Section */}
+          <div className="mt-16">
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Customer App Preview */}
+              <div className="bg-white rounded-2xl shadow-xl p-6 border-2 border-gray-200">
+                <div className="bg-gradient-to-br from-brand-primary to-brand-accent rounded-xl aspect-[9/16] flex flex-col items-center justify-center p-6 text-white mb-4">
+                  <svg className="w-16 h-16 mb-4 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  </svg>
+                  <p className="text-center font-semibold">Customer App</p>
+                  <p className="text-sm opacity-80 text-center mt-2">Browse & Book Services</p>
+                </div>
+                <h3 className="font-bold text-lg mb-2 text-center">For Customers</h3>
+                <p className="text-gray-600 text-sm text-center">Find and book event services with ease</p>
+              </div>
+
+              {/* Provider App Preview */}
+              <div className="bg-white rounded-2xl shadow-xl p-6 border-2 border-gray-200">
+                <div className="bg-gradient-to-br from-green-600 to-green-500 rounded-xl aspect-[9/16] flex flex-col items-center justify-center p-6 text-white mb-4">
+                  <svg className="w-16 h-16 mb-4 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  </svg>
+                  <p className="text-center font-semibold">Provider App</p>
+                  <p className="text-sm opacity-80 text-center mt-2">Manage Your Business</p>
+                </div>
+                <h3 className="font-bold text-lg mb-2 text-center">For Providers</h3>
+                <p className="text-gray-600 text-sm text-center">Manage services and track orders</p>
+              </div>
+
+              {/* Admin Portal Preview */}
+              <div className="bg-white rounded-2xl shadow-xl p-6 border-2 border-gray-200">
+                <div className="bg-gradient-to-br from-purple-600 to-purple-500 rounded-xl aspect-[9/16] flex flex-col items-center justify-center p-6 text-white mb-4">
+                  <svg className="w-16 h-16 mb-4 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  <p className="text-center font-semibold">Admin Portal</p>
+                  <p className="text-sm opacity-80 text-center mt-2">Platform Management</p>
+                </div>
+                <h3 className="font-bold text-lg mb-2 text-center">Admin Dashboard</h3>
+                <p className="text-gray-600 text-sm text-center">Comprehensive platform control</p>
+              </div>
             </div>
+            <p className="text-center text-gray-500 text-sm mt-8">
+              * App screenshots will be added soon. Currently available on TestFlight for beta testing.
+            </p>
           </div>
         </div>
       </section>
@@ -95,21 +135,21 @@ export default function Home() {
               Why Choose Azimah Tech?
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Everything you need for seamless event discovery and booking - bringing people together
+              Everything you need to plan perfect events - connecting you with trusted service providers across Saudi Arabia
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Feature 1 - For Customers */}
+            {/* Feature 1 - Browse Providers */}
             <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl">
               <div className="w-12 h-12 bg-brand-primary rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Easy Discovery</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Browse & Discover</h3>
               <p className="text-gray-600">
-                Browse thousands of events, filter by category, location, and date. Find exactly what you're looking for in seconds.
+                Explore hundreds of verified service providers. Filter by category, city, and ratings to find the perfect match for your event needs.
               </p>
             </div>
 
@@ -122,59 +162,112 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Secure Payments</h3>
               <p className="text-gray-600">
-                Pay securely with integrated payment gateways. Your transactions are protected with industry-standard encryption.
+                Book services with confidence using secure Paymob payment processing. Transparent pricing with no hidden fees.
               </p>
             </div>
 
-            {/* Feature 3 - Real-time Updates */}
+            {/* Feature 3 - Wide Coverage */}
             <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl">
               <div className="w-12 h-12 bg-brand-accent rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Real-time Updates</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Available in 24+ Cities</h3>
               <p className="text-gray-600">
-                Get instant notifications about event updates, booking confirmations, and special offers tailored for you.
+                From Riyadh to Jeddah, Dammam to Mecca - find trusted service providers across all major Saudi cities.
               </p>
             </div>
 
-            {/* Feature 4 - For Providers */}
+            {/* Feature 4 - Service Categories */}
             <div className="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl">
               <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Complete Service Categories</h3>
+              <p className="text-gray-600">
+                Premium catering, furniture & decor rentals, camping & party equipment, professional drivers & transportation - all in one place.
+              </p>
+            </div>
+
+            {/* Feature 5 - Provider Tools */}
+            <div className="bg-gradient-to-br from-pink-50 to-pink-100 p-8 rounded-2xl">
+              <div className="w-12 h-12 bg-pink-600 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Provider Tools</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">For Service Providers</h3>
               <p className="text-gray-600">
-                Event providers get powerful tools to manage events, track bookings, and grow their business effortlessly.
+                Powerful tools to manage your services, track orders, handle bookings, and grow your business. Join our network of trusted providers.
               </p>
             </div>
 
-            {/* Feature 5 - Analytics */}
-            <div className="bg-gradient-to-br from-pink-50 to-pink-100 p-8 rounded-2xl">
-              <div className="w-12 h-12 bg-pink-600 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Insights & Analytics</h3>
-              <p className="text-gray-600">
-                Comprehensive analytics dashboard for providers to understand their audience and optimize event performance.
-              </p>
-            </div>
-
-            {/* Feature 6 - Support */}
+            {/* Feature 6 - Ratings & Reviews */}
             <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 p-8 rounded-2xl">
               <div className="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">24/7 Support</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Real Reviews & Ratings</h3>
               <p className="text-gray-600">
-                Our dedicated support team is always ready to help. Get assistance anytime, anywhere.
+                Make informed decisions with authentic customer reviews and ratings. Only verified providers on our platform.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Categories Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-purple-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+              Complete Event Services
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Whether you're planning a wedding, corporate event, or private celebration - we've got you covered
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Catering */}
+            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+              <div className="text-6xl mb-4 text-center">✨</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Premium Catering</h3>
+              <p className="text-gray-600 text-center text-sm">
+                Professional catering services for all event types and sizes
+              </p>
+            </div>
+
+            {/* Furniture */}
+            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+              <div className="text-6xl mb-4 text-center">🪑</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Furniture & Decor</h3>
+              <p className="text-gray-600 text-center text-sm">
+                Complete furniture rentals and elegant decor for your events
+              </p>
+            </div>
+
+            {/* Camping & Parties */}
+            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+              <div className="text-6xl mb-4 text-center">⛺</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Camping & Parties</h3>
+              <p className="text-gray-600 text-center text-sm">
+                Tents, party equipment, and outdoor event essentials
+              </p>
+            </div>
+
+            {/* Transportation */}
+            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+              <div className="text-6xl mb-4 text-center">🚗</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Transportation</h3>
+              <p className="text-gray-600 text-center text-sm">
+                Professional drivers and reliable transportation services
               </p>
             </div>
           </div>
@@ -188,7 +281,7 @@ export default function Home() {
             Download the App Today
           </h2>
           <p className="text-xl text-white/90 mb-12 max-w-2xl mx-auto">
-            Available on iOS and Android. Start discovering amazing events in your area.
+            Available on iOS and Android. Start finding trusted service providers for your events in seconds.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -315,7 +408,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-400 mb-4">
-                Bringing people together through amazing events across Saudi Arabia.
+                Your trusted marketplace connecting you with the best event service providers across Saudi Arabia.
               </p>
             </div>
 
@@ -331,9 +424,8 @@ export default function Home() {
             <div>
               <h4 className="font-semibold mb-4">Connect</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Instagram</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Twitter</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">LinkedIn</a></li>
+                <li><a href="https://instagram.com/azimahtech" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Instagram @azimahtech</a></li>
+                <li><a href="https://x.com/azimahtech" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">X (Twitter) @azimahtech</a></li>
               </ul>
             </div>
           </div>
