@@ -60,7 +60,7 @@ export default function Home() {
               <span className="block text-brand-secondary mt-2">Marketplace in Saudi Arabia</span>
             </h2>
             <p className="text-xl sm:text-2xl text-gray-600 mb-10 max-w-3xl mx-auto">
-              Connect with verified service providers for all your event needs - from catering and furniture to transportation and camping equipment. Making your events extraordinary, one click at a time.
+              Connect with verified service providers for all your event needs - from catering and furniture to camping equipment. Making your events extraordinary, one click at a time.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -176,7 +176,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Complete Service Categories</h3>
               <p className="text-gray-600">
-                Premium catering, furniture & decor rentals, camping & party equipment, professional drivers & transportation - all in one place.
+                Premium catering, furniture & decor rentals, camping & party equipment - all in one place.
               </p>
             </div>
 
@@ -221,7 +221,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Catering */}
             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
               <div className="text-6xl mb-4 text-center">✨</div>
@@ -246,15 +246,6 @@ export default function Home() {
               <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Camping & Parties</h3>
               <p className="text-gray-600 text-center text-sm">
                 Tents, party equipment, and outdoor event essentials
-              </p>
-            </div>
-
-            {/* Transportation */}
-            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
-              <div className="text-6xl mb-4 text-center">🚗</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Transportation</h3>
-              <p className="text-gray-600 text-center text-sm">
-                Professional drivers and reliable transportation services
               </p>
             </div>
           </div>
