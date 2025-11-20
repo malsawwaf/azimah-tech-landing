@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "title": "Azimah Tech - Your Trusted Event Services Marketplace",
+    "description": "Azimah Tech connects you with the best event service providers across Saudi Arabia. Find catering, furniture rentals, and camping equipment for your events. Available in 24+ cities.",
+    "keywords": "Azimah Tech, event services, marketplace, Saudi Arabia, KSA, catering, furniture rental, camping, event planning, عزيمة"
+  },
+  "nav": {
+    "logo": "Azimah Tech",
+    "subtitle": "عزيمة - Gathering",
+    "features": "Features",
+    "download": "Download",
+    "contact": "Contact",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "title": "Your Trusted Event Services",
+    "titleHighlight": "Marketplace in Saudi Arabia",
+    "description": "Connect with verified service providers for all your event needs - from catering and furniture to camping equipment. Making your events extraordinary, one click at a time.",
+    "downloadNow": "Download Now",
+    "learnMore": "Learn More",
+    "customerApp": "Customer App",
+    "customerAppSubtitle": "Browse & Book Services",
+    "customerAppDesc": "For Customers",
+    "customerAppDetails": "Find and book event services with ease",
+    "providerApp": "Provider App",
+    "providerAppSubtitle": "Manage Your Business",
+    "providerAppDesc": "For Providers",
+    "providerAppDetails": "Manage services and track orders",
+    "screenshotsNote": "* App screenshots will be added soon. Currently available on TestFlight for beta testing."
+  },
+  "features": {
+    "title": "Why Choose Azimah Tech?",
+    "description": "Everything you need to plan perfect events - connecting you with trusted service providers across Saudi Arabia",
+    "browse": {
+      "title": "Browse & Discover",
+      "description": "Explore hundreds of verified service providers. Filter by category, city, and ratings to find the perfect match for your event needs."
+    },
+    "payments": {
+      "title": "Secure Payments",
+      "description": "Book services with confidence using secure Paymob payment processing. Transparent pricing with no hidden fees."
+    },
+    "coverage": {
+      "title": "Available in 24+ Cities",
+      "description": "From Riyadh to Jeddah, Dammam to Makkah - find trusted service providers across all major Saudi cities."
+    },
+    "categories": {
+      "title": "Complete Service Categories",
+      "description": "Premium catering, furniture & decor rentals, camping & party equipment - all in one place."
+    },
+    "providers": {
+      "title": "For Service Providers",
+      "description": "Powerful tools to manage your services, track orders, handle bookings, and grow your business. Join our network of trusted providers."
+    },
+    "reviews": {
+      "title": "Real Reviews & Ratings",
+      "description": "Make informed decisions with authentic customer reviews and ratings. Only verified providers on our platform."
+    }
+  },
+  "services": {
+    "title": "Complete Event Services",
+    "description": "Whether you're planning a wedding, corporate event, or private celebration - we've got you covered",
+    "catering": {
+      "title": "Premium Catering",
+      "description": "Professional catering services for all event types and sizes"
+    },
+    "furniture": {
+      "title": "Furniture & Decor",
+      "description": "Complete furniture rentals and elegant decor for your events"
+    },
+    "camping": {
+      "title": "Camping & Parties",
+      "description": "Tents, party equipment, and outdoor event essentials"
+    }
+  },
+  "download": {
+    "title": "Download the App Today",
+    "description": "Available on iOS and Android. Start finding trusted service providers for your events in seconds.",
+    "appStore": "App Store",
+    "appStoreSubtitle": "Download on the",
+    "googlePlay": "Google Play",
+    "googlePlaySubtitle": "Get it on",
+    "comingSoon": "Coming soon to app stores • Sign up to get notified"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "description": "Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.",
+    "nameLabel": "Your Name",
+    "namePlaceholder": "John Doe",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "john@example.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Tell us what you're thinking about...",
+    "sendButton": "Send Message",
+    "sending": "Sending...",
+    "successMessage": "Thank you! Your message has been sent successfully."
+  },
+  "footer": {
+    "description": "Your trusted marketplace connecting you with the best event service providers across Saudi Arabia.",
+    "quickLinks": "Quick Links",
+    "connect": "Connect",
+    "copyright": "© {year} Azimah Tech. All rights reserved."
+  }
+}

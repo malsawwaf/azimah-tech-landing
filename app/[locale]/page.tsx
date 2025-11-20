@@ -1,8 +1,11 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
+import LanguageSwitcher from '@/components/LanguageSwitcher';
 
 export default function Home() {
+  const t = useTranslations();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -32,20 +35,21 @@ export default function Home() {
             <div className="flex items-center space-x-3">
               <img src="/logo.png" alt="Azimah Tech Logo" className="h-10 w-auto" />
               <div>
-                <h1 className="text-xl font-bold text-brand-primary">Azimah Tech</h1>
-                <p className="text-xs text-brand-secondary">عزيمة - Gathering</p>
+                <h1 className="text-xl font-bold text-brand-primary">{t('nav.logo')}</h1>
+                <p className="text-xs text-brand-secondary">{t('nav.subtitle')}</p>
               </div>
             </div>
-            <div className="hidden md:flex space-x-8">
-              <a href="#features" className="text-gray-700 hover:text-brand-primary transition-colors">Features</a>
-              <a href="#download" className="text-gray-700 hover:text-brand-primary transition-colors">Download</a>
-              <a href="#contact" className="text-gray-700 hover:text-brand-primary transition-colors">Contact</a>
+            <div className="hidden md:flex space-x-8 items-center">
+              <a href="#features" className="text-gray-700 hover:text-brand-primary transition-colors">{t('nav.features')}</a>
+              <a href="#download" className="text-gray-700 hover:text-brand-primary transition-colors">{t('nav.download')}</a>
+              <a href="#contact" className="text-gray-700 hover:text-brand-primary transition-colors">{t('nav.contact')}</a>
+              <LanguageSwitcher />
             </div>
             <a
               href="#download"
               className="bg-brand-secondary text-white px-6 py-2 rounded-lg hover:opacity-90 transition-all"
             >
-              Get Started
+              {t('nav.getStarted')}
             </a>
           </div>
         </div>
@@ -56,24 +60,24 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
             <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6">
-              Your Trusted Event Services
-              <span className="block text-brand-secondary mt-2">Marketplace in Saudi Arabia</span>
+              {t('hero.title')}
+              <span className="block text-brand-secondary mt-2">{t('hero.titleHighlight')}</span>
             </h2>
             <p className="text-xl sm:text-2xl text-gray-600 mb-10 max-w-3xl mx-auto">
-              Connect with verified service providers for all your event needs - from catering and furniture to camping equipment. Making your events extraordinary, one click at a time.
+              {t('hero.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="#download"
                 className="bg-brand-secondary text-white px-8 py-4 rounded-lg text-lg font-semibold hover:opacity-90 transition-all shadow-lg"
               >
-                Download Now
+                {t('hero.downloadNow')}
               </a>
               <a
                 href="#features"
                 className="bg-white text-brand-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-50 transition-all shadow-lg border-2 border-brand-primary"
               >
-                Learn More
+                {t('hero.learnMore')}
               </a>
             </div>
           </div>
@@ -87,11 +91,11 @@ export default function Home() {
                   <svg className="w-16 h-16 mb-4 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                   </svg>
-                  <p className="text-center font-semibold">Customer App</p>
-                  <p className="text-sm opacity-80 text-center mt-2">Browse & Book Services</p>
+                  <p className="text-center font-semibold">{t('hero.customerApp')}</p>
+                  <p className="text-sm opacity-80 text-center mt-2">{t('hero.customerAppSubtitle')}</p>
                 </div>
-                <h3 className="font-bold text-lg mb-2 text-center">For Customers</h3>
-                <p className="text-gray-600 text-sm text-center">Find and book event services with ease</p>
+                <h3 className="font-bold text-lg mb-2 text-center">{t('hero.customerAppDesc')}</h3>
+                <p className="text-gray-600 text-sm text-center">{t('hero.customerAppDetails')}</p>
               </div>
 
               {/* Provider App Preview */}
@@ -100,15 +104,15 @@ export default function Home() {
                   <svg className="w-16 h-16 mb-4 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                   </svg>
-                  <p className="text-center font-semibold">Provider App</p>
-                  <p className="text-sm opacity-80 text-center mt-2">Manage Your Business</p>
+                  <p className="text-center font-semibold">{t('hero.providerApp')}</p>
+                  <p className="text-sm opacity-80 text-center mt-2">{t('hero.providerAppSubtitle')}</p>
                 </div>
-                <h3 className="font-bold text-lg mb-2 text-center">For Providers</h3>
-                <p className="text-gray-600 text-sm text-center">Manage services and track orders</p>
+                <h3 className="font-bold text-lg mb-2 text-center">{t('hero.providerAppDesc')}</h3>
+                <p className="text-gray-600 text-sm text-center">{t('hero.providerAppDetails')}</p>
               </div>
             </div>
             <p className="text-center text-gray-500 text-sm mt-8">
-              * App screenshots will be added soon. Currently available on TestFlight for beta testing.
+              {t('hero.screenshotsNote')}
             </p>
           </div>
         </div>
@@ -119,10 +123,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-              Why Choose Azimah Tech?
+              {t('features.title')}
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Everything you need to plan perfect events - connecting you with trusted service providers across Saudi Arabia
+              {t('features.description')}
             </p>
           </div>
 
@@ -134,9 +138,9 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Browse & Discover</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">{t('features.browse.title')}</h3>
               <p className="text-gray-600">
-                Explore hundreds of verified service providers. Filter by category, city, and ratings to find the perfect match for your event needs.
+                {t('features.browse.description')}
               </p>
             </div>
 
@@ -147,9 +151,9 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Secure Payments</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">{t('features.payments.title')}</h3>
               <p className="text-gray-600">
-                Book services with confidence using secure Paymob payment processing. Transparent pricing with no hidden fees.
+                {t('features.payments.description')}
               </p>
             </div>
 
@@ -161,9 +165,9 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Available in 24+ Cities</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">{t('features.coverage.title')}</h3>
               <p className="text-gray-600">
-                From Riyadh to Jeddah, Dammam to Makkah - find trusted service providers across all major Saudi cities.
+                {t('features.coverage.description')}
               </p>
             </div>
 
@@ -174,9 +178,9 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h16M4 18h16" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Complete Service Categories</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">{t('features.categories.title')}</h3>
               <p className="text-gray-600">
-                Premium catering, furniture & decor rentals, camping & party equipment - all in one place.
+                {t('features.categories.description')}
               </p>
             </div>
 
@@ -187,9 +191,9 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">For Service Providers</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">{t('features.providers.title')}</h3>
               <p className="text-gray-600">
-                Powerful tools to manage your services, track orders, handle bookings, and grow your business. Join our network of trusted providers.
+                {t('features.providers.description')}
               </p>
             </div>
 
@@ -200,9 +204,9 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Real Reviews & Ratings</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">{t('features.reviews.title')}</h3>
               <p className="text-gray-600">
-                Make informed decisions with authentic customer reviews and ratings. Only verified providers on our platform.
+                {t('features.reviews.description')}
               </p>
             </div>
           </div>
@@ -214,10 +218,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-              Complete Event Services
+              {t('services.title')}
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Whether you're planning a wedding, corporate event, or private celebration - we've got you covered
+              {t('services.description')}
             </p>
           </div>
 
@@ -225,27 +229,27 @@ export default function Home() {
             {/* Catering */}
             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
               <div className="text-6xl mb-4 text-center">✨</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Premium Catering</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">{t('services.catering.title')}</h3>
               <p className="text-gray-600 text-center text-sm">
-                Professional catering services for all event types and sizes
+                {t('services.catering.description')}
               </p>
             </div>
 
             {/* Furniture */}
             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
               <div className="text-6xl mb-4 text-center">🪑</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Furniture & Decor</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">{t('services.furniture.title')}</h3>
               <p className="text-gray-600 text-center text-sm">
-                Complete furniture rentals and elegant decor for your events
+                {t('services.furniture.description')}
               </p>
             </div>
 
             {/* Camping & Parties */}
             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
               <div className="text-6xl mb-4 text-center">⛺</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Camping & Parties</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">{t('services.camping.title')}</h3>
               <p className="text-gray-600 text-center text-sm">
-                Tents, party equipment, and outdoor event essentials
+                {t('services.camping.description')}
               </p>
             </div>
           </div>
@@ -256,10 +260,10 @@ export default function Home() {
       <section id="download" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-brand-primary to-brand-accent">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-            Download the App Today
+            {t('download.title')}
           </h2>
           <p className="text-xl text-white/90 mb-12 max-w-2xl mx-auto">
-            Available on iOS and Android. Start finding trusted service providers for your events in seconds.
+            {t('download.description')}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -270,8 +274,8 @@ export default function Home() {
                   <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
                 </svg>
                 <div className="text-left">
-                  <p className="text-white/80 text-sm">Download on the</p>
-                  <p className="text-white text-2xl font-bold">App Store</p>
+                  <p className="text-white/80 text-sm">{t('download.appStoreSubtitle')}</p>
+                  <p className="text-white text-2xl font-bold">{t('download.appStore')}</p>
                 </div>
               </div>
             </div>
@@ -283,15 +287,15 @@ export default function Home() {
                   <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
                 </svg>
                 <div className="text-left">
-                  <p className="text-white/80 text-sm">Get it on</p>
-                  <p className="text-white text-2xl font-bold">Google Play</p>
+                  <p className="text-white/80 text-sm">{t('download.googlePlaySubtitle')}</p>
+                  <p className="text-white text-2xl font-bold">{t('download.googlePlay')}</p>
                 </div>
               </div>
             </div>
           </div>
 
           <p className="text-white/60 text-sm mt-8">
-            Coming soon to app stores • Sign up to get notified
+            {t('download.comingSoon')}
           </p>
         </div>
       </section>
@@ -301,10 +305,10 @@ export default function Home() {
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-              Get In Touch
+              {t('contact.title')}
             </h2>
             <p className="text-xl text-gray-600">
-              Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+              {t('contact.description')}
             </p>
           </div>
 
@@ -312,7 +316,7 @@ export default function Home() {
             <div className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                  Your Name
+                  {t('contact.nameLabel')}
                 </label>
                 <input
                   type="text"
@@ -321,13 +325,13 @@ export default function Home() {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-primary focus:border-transparent outline-none transition-all"
-                  placeholder="John Doe"
+                  placeholder={t('contact.namePlaceholder')}
                 />
               </div>
 
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  Email Address
+                  {t('contact.emailLabel')}
                 </label>
                 <input
                   type="email"
@@ -336,13 +340,13 @@ export default function Home() {
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-primary focus:border-transparent outline-none transition-all"
-                  placeholder="john@example.com"
+                  placeholder={t('contact.emailPlaceholder')}
                 />
               </div>
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                  Message
+                  {t('contact.messageLabel')}
                 </label>
                 <textarea
                   id="message"
@@ -351,7 +355,7 @@ export default function Home() {
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-primary focus:border-transparent outline-none transition-all resize-none"
-                  placeholder="Tell us what you're thinking about..."
+                  placeholder={t('contact.messagePlaceholder')}
                 />
               </div>
 
@@ -360,12 +364,12 @@ export default function Home() {
                 disabled={formStatus === 'submitting'}
                 className="w-full bg-brand-primary text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {formStatus === 'submitting' ? 'Sending...' : 'Send Message'}
+                {formStatus === 'submitting' ? t('contact.sending') : t('contact.sendButton')}
               </button>
 
               {formStatus === 'success' && (
                 <div className="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg">
-                  Thank you! Your message has been sent successfully.
+                  {t('contact.successMessage')}
                 </div>
               )}
             </div>
@@ -381,26 +385,26 @@ export default function Home() {
               <div className="flex items-center space-x-3 mb-4">
                 <img src="/logo.png" alt="Azimah Tech Logo" className="h-12 w-auto" />
                 <div>
-                  <h3 className="text-2xl font-bold">Azimah Tech</h3>
-                  <p className="text-sm text-brand-secondary">عزيمة - Gathering</p>
+                  <h3 className="text-2xl font-bold">{t('nav.logo')}</h3>
+                  <p className="text-sm text-brand-secondary">{t('nav.subtitle')}</p>
                 </div>
               </div>
               <p className="text-gray-400 mb-4">
-                Your trusted marketplace connecting you with the best event service providers across Saudi Arabia.
+                {t('footer.description')}
               </p>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4">Quick Links</h4>
+              <h4 className="font-semibold mb-4">{t('footer.quickLinks')}</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#features" className="hover:text-white transition-colors">Features</a></li>
-                <li><a href="#download" className="hover:text-white transition-colors">Download</a></li>
-                <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
+                <li><a href="#features" className="hover:text-white transition-colors">{t('nav.features')}</a></li>
+                <li><a href="#download" className="hover:text-white transition-colors">{t('nav.download')}</a></li>
+                <li><a href="#contact" className="hover:text-white transition-colors">{t('nav.contact')}</a></li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4">Connect</h4>
+              <h4 className="font-semibold mb-4">{t('footer.connect')}</h4>
               <div className="flex items-center gap-4">
                 <a href="https://instagram.com/azimahtech" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors" aria-label="Follow us on Instagram">
                   <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
@@ -418,7 +422,7 @@ export default function Home() {
           </div>
 
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-            <p>&copy; {new Date().getFullYear()} Azimah Tech. All rights reserved.</p>
+            <p>{t('footer.copyright', { year: new Date().getFullYear() })}</p>
           </div>
         </div>
       </footer>
