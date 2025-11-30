@@ -10,7 +10,9 @@
     "features": "Features",
     "download": "Download",
     "contact": "Contact",
-    "getStarted": "Get Started"
+    "getStarted": "Get Started",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
   },
   "hero": {
     "title": "Your Trusted Event Services",
@@ -97,7 +99,171 @@
   "footer": {
     "description": "Your trusted marketplace connecting you with the best event service providers across Saudi Arabia.",
     "quickLinks": "Quick Links",
+    "legal": "Legal",
     "connect": "Connect",
     "copyright": "© {year} Azimah Tech. All rights reserved."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last Updated",
+    "backToHome": "Back to Home",
+    "intro": {
+      "title": "Introduction",
+      "content": "Azimah Tech (\"we,\" \"our,\" or \"us\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile applications (Customer App and Provider App) and website. Please read this policy carefully."
+    },
+    "collect": {
+      "title": "Information We Collect",
+      "personal": {
+        "title": "Personal Information",
+        "item1": "Name, email address, and phone number",
+        "item2": "Profile photo (optional)",
+        "item3": "Delivery addresses and location data",
+        "item4": "Payment information (processed securely by Paymob)"
+      },
+      "usage": {
+        "title": "Usage Information",
+        "item1": "Device information (device type, operating system)",
+        "item2": "App usage data and preferences",
+        "item3": "Order history and transaction data"
+      }
+    },
+    "use": {
+      "title": "How We Use Your Information",
+      "item1": "To provide and maintain our services",
+      "item2": "To process transactions and send related information",
+      "item3": "To send promotional communications (with your consent)",
+      "item4": "To respond to your comments, questions, and requests",
+      "item5": "To improve our applications and services"
+    },
+    "sharing": {
+      "title": "Information Sharing",
+      "content": "We do not sell your personal information. We may share your information with:",
+      "item1": "Service providers who assist in delivering services (e.g., when you place an order)",
+      "item2": "Payment processors (Paymob) for secure transaction processing",
+      "item3": "Law enforcement when required by law"
+    },
+    "security": {
+      "title": "Data Security",
+      "content": "We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. All data is transmitted using SSL encryption and stored securely on Supabase servers."
+    },
+    "rights": {
+      "title": "Your Rights",
+      "content": "You have the right to:",
+      "item1": "Access your personal data",
+      "item2": "Correct inaccurate data",
+      "item3": "Request deletion of your data",
+      "item4": "Withdraw consent for marketing communications"
+    },
+    "thirdParty": {
+      "title": "Third-Party Services",
+      "content": "Our applications use the following third-party services:",
+      "supabase": "Database and authentication services",
+      "firebase": "Push notifications and analytics",
+      "paymob": "Payment processing",
+      "google": "Maps and location services"
+    },
+    "children": {
+      "title": "Children's Privacy",
+      "content": "Our services are not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13."
+    },
+    "changes": {
+      "title": "Changes to This Policy",
+      "content": "We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the \"Last Updated\" date."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "content": "If you have any questions about this Privacy Policy, please contact us:",
+      "email": "Email",
+      "address": "Address"
+    }
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last Updated",
+    "backToHome": "Back to Home",
+    "agreement": {
+      "title": "Agreement to Terms",
+      "content": "By accessing or using Azimah Tech applications and services, you agree to be bound by these Terms of Service. If you disagree with any part of these terms, you may not access our services."
+    },
+    "eligibility": {
+      "title": "Eligibility",
+      "content": "You must be at least 18 years old to use our services. By using our applications, you represent and warrant that you are at least 18 years of age and have the legal capacity to enter into these Terms."
+    },
+    "accounts": {
+      "title": "User Accounts",
+      "item1": "You are responsible for maintaining the confidentiality of your account credentials",
+      "item2": "You must provide accurate and complete information when creating an account",
+      "item3": "You are responsible for all activities that occur under your account",
+      "item4": "You must notify us immediately of any unauthorized use of your account"
+    },
+    "services": {
+      "title": "Our Services",
+      "content": "Azimah Tech provides a marketplace connecting customers with event service providers in Saudi Arabia.",
+      "customers": {
+        "title": "For Customers:",
+        "item1": "Browse and discover event service providers",
+        "item2": "Book services and make payments",
+        "item3": "Leave reviews and ratings"
+      },
+      "providers": {
+        "title": "For Service Providers:",
+        "item1": "List and manage services",
+        "item2": "Receive and fulfill orders",
+        "item3": "Communicate with customers"
+      }
+    },
+    "payments": {
+      "title": "Payments & Fees",
+      "item1": "All prices are displayed in Saudi Riyals (SAR) and include 15% VAT",
+      "item2": "Payments are processed securely through Paymob",
+      "item3": "Service providers are responsible for their own pricing",
+      "item4": "Azimah Tech may charge platform fees as disclosed in the app"
+    },
+    "cancellations": {
+      "title": "Cancellations & Refunds",
+      "content": "Cancellation policies vary by service provider. Generally:",
+      "item1": "Customers may cancel orders before provider acceptance for a full refund",
+      "item2": "Cancellations after acceptance may be subject to fees as determined by the provider",
+      "item3": "Refunds are processed within 5-10 business days"
+    },
+    "prohibited": {
+      "title": "Prohibited Activities",
+      "content": "You agree not to:",
+      "item1": "Use the service for any illegal purpose",
+      "item2": "Provide false or misleading information",
+      "item3": "Interfere with the proper functioning of the platform",
+      "item4": "Harass, abuse, or harm other users",
+      "item5": "Attempt to bypass any security measures"
+    },
+    "intellectual": {
+      "title": "Intellectual Property",
+      "content": "The Azimah Tech name, logo, and all related trademarks, service marks, and logos are owned by Azimah Tech. You may not use these marks without our prior written permission."
+    },
+    "liability": {
+      "title": "Limitation of Liability",
+      "content": "To the maximum extent permitted by law, Azimah Tech shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of our services. Our total liability shall not exceed the amount you paid for the services in question."
+    },
+    "indemnification": {
+      "title": "Indemnification",
+      "content": "You agree to indemnify and hold harmless Azimah Tech and its officers, directors, employees, and agents from any claims, damages, losses, or expenses arising from your use of the service or violation of these Terms."
+    },
+    "governing": {
+      "title": "Governing Law",
+      "content": "These Terms shall be governed by and construed in accordance with the laws of the Kingdom of Saudi Arabia. Any disputes shall be resolved in the courts of Jeddah, Saudi Arabia."
+    },
+    "termination": {
+      "title": "Termination",
+      "content": "We may terminate or suspend your account and access to our services immediately, without prior notice, for any reason, including breach of these Terms. Upon termination, your right to use the services will cease immediately."
+    },
+    "changes": {
+      "title": "Changes to Terms",
+      "content": "We reserve the right to modify these Terms at any time. We will notify users of any material changes via the app or email. Continued use of the service after changes constitutes acceptance of the new Terms."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "content": "If you have any questions about these Terms, please contact us:",
+      "email": "Email",
+      "address": "Address"
+    }
   }
 }

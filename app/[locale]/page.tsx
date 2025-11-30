@@ -404,6 +404,14 @@ export default function Home() {
             </div>
 
             <div>
+              <h4 className="font-semibold mb-4">{t('footer.legal')}</h4>
+              <ul className="space-y-2 text-gray-400">
+                <li><a href="/privacy" className="hover:text-white transition-colors">{t('nav.privacy')}</a></li>
+                <li><a href="/terms" className="hover:text-white transition-colors">{t('nav.terms')}</a></li>
+              </ul>
+            </div>
+
+            <div>
               <h4 className="font-semibold mb-4">{t('footer.connect')}</h4>
               <div className="flex items-center gap-4">
                 <a href="https://instagram.com/azimahtech" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors" aria-label="Follow us on Instagram">
