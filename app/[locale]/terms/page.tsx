@@ -27,6 +27,7 @@ export default function TermsOfService() {
       <main className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">{t('title')}</h1>
+          <p className="text-gray-500 mb-2">{t('effectiveDate')}</p>
           <p className="text-gray-500 mb-8">{t('lastUpdated')}: December 1, 2025</p>
 
           <div className="prose prose-lg max-w-none">
@@ -50,6 +51,7 @@ export default function TermsOfService() {
                 <li>{t('accounts.item2')}</li>
                 <li>{t('accounts.item3')}</li>
                 <li>{t('accounts.item4')}</li>
+                <li>{t('accounts.item5')}</li>
               </ul>
             </section>
 
@@ -62,12 +64,14 @@ export default function TermsOfService() {
                 <li>{t('services.customers.item1')}</li>
                 <li>{t('services.customers.item2')}</li>
                 <li>{t('services.customers.item3')}</li>
+                <li>{t('services.customers.item4')}</li>
               </ul>
               <h3 className="text-xl font-medium text-gray-800 mb-2">{t('services.providers.title')}</h3>
               <ul className="list-disc list-inside text-gray-600 space-y-1">
                 <li>{t('services.providers.item1')}</li>
                 <li>{t('services.providers.item2')}</li>
                 <li>{t('services.providers.item3')}</li>
+                <li>{t('services.providers.item4')}</li>
               </ul>
             </section>
 
@@ -79,6 +83,7 @@ export default function TermsOfService() {
                 <li>{t('payments.item2')}</li>
                 <li>{t('payments.item3')}</li>
                 <li>{t('payments.item4')}</li>
+                <li>{t('payments.item5')}</li>
               </ul>
             </section>
 
@@ -90,6 +95,21 @@ export default function TermsOfService() {
                 <li>{t('cancellations.item1')}</li>
                 <li>{t('cancellations.item2')}</li>
                 <li>{t('cancellations.item3')}</li>
+                <li>{t('cancellations.item4')}</li>
+              </ul>
+            </section>
+
+            {/* Provider Obligations */}
+            <section className="mb-8 bg-blue-50 p-6 rounded-lg">
+              <h2 className="text-2xl font-semibold text-gray-900 mb-4">{t('provider.title')}</h2>
+              <p className="text-gray-600 mb-4">{t('provider.content')}</p>
+              <ul className="list-disc list-inside text-gray-600 space-y-1">
+                <li>{t('provider.item1')}</li>
+                <li>{t('provider.item2')}</li>
+                <li>{t('provider.item3')}</li>
+                <li>{t('provider.item4')}</li>
+                <li>{t('provider.item5')}</li>
+                <li>{t('provider.item6')}</li>
               </ul>
             </section>
 
@@ -103,6 +123,8 @@ export default function TermsOfService() {
                 <li>{t('prohibited.item3')}</li>
                 <li>{t('prohibited.item4')}</li>
                 <li>{t('prohibited.item5')}</li>
+                <li>{t('prohibited.item6')}</li>
+                <li>{t('prohibited.item7')}</li>
               </ul>
             </section>
 
@@ -124,6 +146,17 @@ export default function TermsOfService() {
               <p className="text-gray-600">{t('indemnification.content')}</p>
             </section>
 
+            {/* Dispute Resolution */}
+            <section className="mb-8 bg-gray-50 p-6 rounded-lg">
+              <h2 className="text-2xl font-semibold text-gray-900 mb-4">{t('disputes.title')}</h2>
+              <p className="text-gray-600 mb-4">{t('disputes.content')}</p>
+              <ul className="list-decimal list-inside text-gray-600 space-y-1">
+                <li>{t('disputes.item1')}</li>
+                <li>{t('disputes.item2')}</li>
+                <li>{t('disputes.item3')}</li>
+              </ul>
+            </section>
+
             {/* Governing Law */}
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">{t('governing.title')}</h2>
@@ -136,6 +169,12 @@ export default function TermsOfService() {
               <p className="text-gray-600">{t('termination.content')}</p>
             </section>
 
+            {/* Force Majeure */}
+            <section className="mb-8">
+              <h2 className="text-2xl font-semibold text-gray-900 mb-4">{t('force.title')}</h2>
+              <p className="text-gray-600">{t('force.content')}</p>
+            </section>
+
             {/* Changes to Terms */}
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">{t('changes.title')}</h2>
@@ -146,10 +185,14 @@ export default function TermsOfService() {
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">{t('contact.title')}</h2>
               <p className="text-gray-600 mb-4">{t('contact.content')}</p>
-              <p className="text-gray-600">
-                <strong>{t('contact.email')}:</strong> support@azimahtech.com<br />
-                <strong>{t('contact.address')}:</strong> Jeddah, Saudi Arabia
-              </p>
+              <div className="bg-white border border-gray-200 rounded-lg p-4">
+                <p className="text-gray-600">
+                  <strong>{t('contact.email')}:</strong> azimahtec@gmail.com<br />
+                  <strong>{t('contact.phone')}:</strong> +966505371707<br />
+                  <strong>{t('contact.address')}:</strong> Jeddah, Saudi Arabia<br />
+                  <strong>{t('contact.cr')}:</strong> 7052259004
+                </p>
+              </div>
             </section>
           </div>
 

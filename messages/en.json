@@ -106,164 +106,262 @@
   "privacy": {
     "title": "Privacy Policy",
     "lastUpdated": "Last Updated",
+    "effectiveDate": "Effective Date: December 1, 2025",
     "backToHome": "Back to Home",
     "intro": {
       "title": "Introduction",
-      "content": "Azimah Tech (\"we,\" \"our,\" or \"us\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile applications (Customer App and Provider App) and website. Please read this policy carefully."
+      "content": "Azimah Tech (\"we,\" \"our,\" or \"us\") is committed to protecting your privacy in accordance with the Kingdom of Saudi Arabia's Personal Data Protection Law (PDPL) and its Implementing Regulations issued by the Saudi Data & Artificial Intelligence Authority (SDAIA). This Privacy Policy explains how we collect, use, disclose, and safeguard your personal data when you use our mobile applications (Customer App and Provider App) and website."
+    },
+    "definitions": {
+      "title": "Definitions",
+      "content": "Under the PDPL:",
+      "item1": "\"Personal Data\" means any data that can identify an individual directly or indirectly",
+      "item2": "\"Sensitive Data\" includes data revealing ethnic origin, religious beliefs, health data, and financial information",
+      "item3": "\"Data Controller\" means Azimah Tech, which determines the purposes and means of processing personal data",
+      "item4": "\"Data Subject\" means you, the individual whose personal data is being processed"
+    },
+    "legalBasis": {
+      "title": "Legal Basis for Processing",
+      "content": "We process your personal data based on the following legal grounds under PDPL Article 5:",
+      "item1": "Your explicit consent provided during registration",
+      "item2": "Performance of a contract to which you are a party (service booking and delivery)",
+      "item3": "Compliance with legal obligations under Saudi law",
+      "item4": "Our legitimate interests in providing and improving our services"
     },
     "collect": {
-      "title": "Information We Collect",
+      "title": "Personal Data We Collect",
       "personal": {
         "title": "Personal Information",
-        "item1": "Name, email address, and phone number",
-        "item2": "Profile photo (optional)",
-        "item3": "Delivery addresses and location data",
-        "item4": "Payment information (processed securely by Paymob)"
+        "item1": "Full name, email address, and phone number (for account creation and communication)",
+        "item2": "Profile photo (optional, for account personalization)",
+        "item3": "Delivery addresses and precise location data (for service delivery)",
+        "item4": "National ID or commercial registration (for provider verification only)"
+      },
+      "financial": {
+        "title": "Financial Information",
+        "item1": "Payment card details (processed securely by Paymob, not stored by us)",
+        "item2": "Transaction history and order records"
       },
       "usage": {
         "title": "Usage Information",
-        "item1": "Device information (device type, operating system)",
-        "item2": "App usage data and preferences",
-        "item3": "Order history and transaction data"
+        "item1": "Device information (device type, operating system, unique device identifiers)",
+        "item2": "App usage data, preferences, and interaction logs",
+        "item3": "IP address and approximate location"
       }
     },
-    "use": {
-      "title": "How We Use Your Information",
-      "item1": "To provide and maintain our services",
-      "item2": "To process transactions and send related information",
-      "item3": "To send promotional communications (with your consent)",
-      "item4": "To respond to your comments, questions, and requests",
-      "item5": "To improve our applications and services"
+    "purpose": {
+      "title": "Purpose of Data Processing",
+      "content": "We collect and process your data for the following specific, clear, and explicit purposes:",
+      "item1": "To create and manage your user account",
+      "item2": "To facilitate bookings between customers and service providers",
+      "item3": "To process payments and issue invoices",
+      "item4": "To provide customer support and respond to inquiries",
+      "item5": "To send service-related notifications (order updates, confirmations)",
+      "item6": "To send promotional communications (only with your explicit consent)",
+      "item7": "To improve our applications and develop new features",
+      "item8": "To comply with legal and regulatory requirements"
     },
     "sharing": {
-      "title": "Information Sharing",
-      "content": "We do not sell your personal information. We may share your information with:",
-      "item1": "Service providers who assist in delivering services (e.g., when you place an order)",
-      "item2": "Payment processors (Paymob) for secure transaction processing",
-      "item3": "Law enforcement when required by law"
+      "title": "Data Sharing and Disclosure",
+      "content": "We do not sell your personal data. We may share your data with:",
+      "item1": "Service providers you book with (name, phone, delivery address - necessary for order fulfillment)",
+      "item2": "Paymob (payment processor) - for secure transaction processing",
+      "item3": "Supabase (cloud infrastructure) - for data storage and authentication",
+      "item4": "Firebase/Google (analytics and notifications) - for app functionality",
+      "item5": "Government authorities - when required by Saudi law or court order"
+    },
+    "crossBorder": {
+      "title": "Cross-Border Data Transfers",
+      "content": "Your data may be transferred to and processed in countries outside Saudi Arabia where our service providers operate. We ensure appropriate safeguards are in place through:",
+      "item1": "Standard Contractual Clauses (SCCs) with international service providers",
+      "item2": "Ensuring recipient countries provide adequate data protection",
+      "item3": "Obtaining your explicit consent for such transfers during registration",
+      "note": "You may withdraw consent for cross-border transfers at any time, which may affect service availability."
+    },
+    "retention": {
+      "title": "Data Retention",
+      "content": "We retain your personal data only as long as necessary:",
+      "item1": "Account data: For the duration of your account plus 5 years for legal compliance",
+      "item2": "Transaction records: 10 years as required by Saudi commercial law",
+      "item3": "Marketing preferences: Until you withdraw consent",
+      "item4": "Support inquiries: 3 years from resolution",
+      "deletion": "Upon account deletion request, we will delete or anonymize your data within 30 days, except where retention is required by law."
     },
     "security": {
       "title": "Data Security",
-      "content": "We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. All data is transmitted using SSL encryption and stored securely on Supabase servers."
+      "content": "We implement appropriate technical and organizational measures to protect your personal data, including:",
+      "item1": "SSL/TLS encryption for all data transmission",
+      "item2": "Encrypted storage on secure Supabase servers",
+      "item3": "Access controls and authentication requirements",
+      "item4": "Regular security assessments and updates",
+      "item5": "Employee training on data protection"
     },
     "rights": {
-      "title": "Your Rights",
-      "content": "You have the right to:",
-      "item1": "Access your personal data",
-      "item2": "Correct inaccurate data",
-      "item3": "Request deletion of your data",
-      "item4": "Withdraw consent for marketing communications"
+      "title": "Your Rights Under PDPL",
+      "content": "Under the Saudi Personal Data Protection Law, you have the following rights:",
+      "item1": "Right to be informed about how your data is collected and used",
+      "item2": "Right to access your personal data and obtain a copy",
+      "item3": "Right to correct inaccurate or incomplete data",
+      "item4": "Right to request deletion of your data (right to be forgotten)",
+      "item5": "Right to restrict processing of your data",
+      "item6": "Right to data portability (receive your data in a structured format)",
+      "item7": "Right to withdraw consent at any time",
+      "item8": "Right to object to processing based on legitimate interests",
+      "exercise": "To exercise any of these rights, contact us at azimahtec@gmail.com. We will respond within 30 days as required by PDPL."
     },
     "thirdParty": {
       "title": "Third-Party Services",
-      "content": "Our applications use the following third-party services:",
-      "supabase": "Database and authentication services",
-      "firebase": "Push notifications and analytics",
-      "paymob": "Payment processing",
-      "google": "Maps and location services"
+      "content": "Our applications use the following third-party services, each with their own privacy policies:",
+      "supabase": "Supabase - Database, authentication, and file storage (servers in Singapore)",
+      "firebase": "Firebase/Google - Push notifications, analytics, crash reporting",
+      "paymob": "Paymob - Payment processing (PCI-DSS compliant)",
+      "google": "Google Maps - Location services and mapping"
     },
     "children": {
       "title": "Children's Privacy",
-      "content": "Our services are not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13."
+      "content": "Our services are not intended for individuals under 18 years of age. We do not knowingly collect personal data from minors. If you believe a minor has provided us with personal data, please contact us immediately."
+    },
+    "cookies": {
+      "title": "Cookies and Tracking",
+      "content": "Our website uses essential cookies for functionality. Our mobile apps use device identifiers for analytics. You can manage cookie preferences in your browser settings."
     },
     "changes": {
       "title": "Changes to This Policy",
-      "content": "We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the \"Last Updated\" date."
+      "content": "We may update this Privacy Policy to reflect changes in our practices or legal requirements. We will notify you of material changes via the app or email at least 30 days before they take effect. Continued use after changes constitutes acceptance."
+    },
+    "complaints": {
+      "title": "Complaints and Regulatory Authority",
+      "content": "If you are not satisfied with our response to your data protection concerns, you have the right to lodge a complaint with:",
+      "sdaia": "Saudi Data & Artificial Intelligence Authority (SDAIA)",
+      "sdaiaWebsite": "https://sdaia.gov.sa"
     },
     "contact": {
       "title": "Contact Us",
-      "content": "If you have any questions about this Privacy Policy, please contact us:",
+      "content": "For any questions about this Privacy Policy or to exercise your data rights, please contact us:",
       "email": "Email",
-      "address": "Address"
+      "phone": "Phone",
+      "address": "Address",
+      "dpo": "Data Protection Inquiries"
     }
   },
   "terms": {
     "title": "Terms of Service",
     "lastUpdated": "Last Updated",
+    "effectiveDate": "Effective Date: December 1, 2025",
     "backToHome": "Back to Home",
     "agreement": {
       "title": "Agreement to Terms",
-      "content": "By accessing or using Azimah Tech applications and services, you agree to be bound by these Terms of Service. If you disagree with any part of these terms, you may not access our services."
+      "content": "By accessing or using Azimah Tech applications and services, you agree to be bound by these Terms of Service, which constitute a legally binding agreement under the laws of the Kingdom of Saudi Arabia. If you disagree with any part of these terms, you may not access our services."
     },
     "eligibility": {
       "title": "Eligibility",
-      "content": "You must be at least 18 years old to use our services. By using our applications, you represent and warrant that you are at least 18 years of age and have the legal capacity to enter into these Terms."
+      "content": "You must be at least 18 years old and legally capable of entering into binding contracts under Saudi law to use our services. By using our applications, you represent and warrant that you meet these requirements."
     },
     "accounts": {
       "title": "User Accounts",
-      "item1": "You are responsible for maintaining the confidentiality of your account credentials",
-      "item2": "You must provide accurate and complete information when creating an account",
+      "item1": "You must provide accurate, complete, and current information during registration",
+      "item2": "You are responsible for maintaining the confidentiality of your account credentials",
       "item3": "You are responsible for all activities that occur under your account",
-      "item4": "You must notify us immediately of any unauthorized use of your account"
+      "item4": "You must notify us immediately at azimahtec@gmail.com of any unauthorized account access",
+      "item5": "We reserve the right to suspend or terminate accounts that violate these terms"
     },
     "services": {
       "title": "Our Services",
-      "content": "Azimah Tech provides a marketplace connecting customers with event service providers in Saudi Arabia.",
+      "content": "Azimah Tech provides a marketplace platform connecting customers with event service providers in the Kingdom of Saudi Arabia. We act as an intermediary and are not a party to the contracts between customers and providers.",
       "customers": {
         "title": "For Customers:",
-        "item1": "Browse and discover event service providers",
-        "item2": "Book services and make payments",
-        "item3": "Leave reviews and ratings"
+        "item1": "Browse and discover verified event service providers",
+        "item2": "Book services and make secure payments through Paymob",
+        "item3": "Track orders and communicate with providers",
+        "item4": "Leave honest reviews and ratings after service completion"
       },
       "providers": {
         "title": "For Service Providers:",
-        "item1": "List and manage services",
-        "item2": "Receive and fulfill orders",
-        "item3": "Communicate with customers"
+        "item1": "List and manage your services with accurate descriptions and pricing",
+        "item2": "Receive and fulfill customer orders in a timely manner",
+        "item3": "Maintain required licenses and permits for your business",
+        "item4": "Comply with all applicable Saudi laws and regulations"
       }
     },
     "payments": {
-      "title": "Payments & Fees",
-      "item1": "All prices are displayed in Saudi Riyals (SAR) and include 15% VAT",
-      "item2": "Payments are processed securely through Paymob",
-      "item3": "Service providers are responsible for their own pricing",
-      "item4": "Azimah Tech may charge platform fees as disclosed in the app"
+      "title": "Payments, Fees & VAT",
+      "item1": "All prices are displayed in Saudi Riyals (SAR) and include 15% Value Added Tax (VAT) as required by ZATCA",
+      "item2": "Payments are processed securely through Paymob, a licensed payment processor",
+      "item3": "Service providers set their own prices and are responsible for their accuracy",
+      "item4": "Azimah Tech charges a platform commission as disclosed to providers during registration",
+      "item5": "Electronic invoices will be issued for all transactions in compliance with ZATCA e-invoicing requirements"
     },
     "cancellations": {
       "title": "Cancellations & Refunds",
-      "content": "Cancellation policies vary by service provider. Generally:",
+      "content": "Our cancellation and refund policy complies with Saudi consumer protection regulations:",
       "item1": "Customers may cancel orders before provider acceptance for a full refund",
-      "item2": "Cancellations after acceptance may be subject to fees as determined by the provider",
-      "item3": "Refunds are processed within 5-10 business days"
+      "item2": "Cancellations after acceptance are subject to the provider's cancellation policy (displayed before booking)",
+      "item3": "Refunds are processed within 14 business days to the original payment method",
+      "item4": "Disputes should be reported within 7 days of service delivery"
+    },
+    "provider": {
+      "title": "Provider Obligations",
+      "content": "Service providers using our platform agree to:",
+      "item1": "Maintain valid commercial registration (Sijil Tijari) and required licenses",
+      "item2": "Provide accurate service descriptions, photos, and pricing",
+      "item3": "Fulfill orders as described and on the agreed dates",
+      "item4": "Maintain appropriate insurance coverage for their services",
+      "item5": "Comply with Saudi health, safety, and quality standards",
+      "item6": "Register for VAT if annual revenues exceed the threshold"
     },
     "prohibited": {
       "title": "Prohibited Activities",
-      "content": "You agree not to:",
-      "item1": "Use the service for any illegal purpose",
-      "item2": "Provide false or misleading information",
-      "item3": "Interfere with the proper functioning of the platform",
-      "item4": "Harass, abuse, or harm other users",
-      "item5": "Attempt to bypass any security measures"
+      "content": "Users agree not to:",
+      "item1": "Use the service for any purpose that violates Saudi law or Islamic principles",
+      "item2": "Provide false, misleading, or fraudulent information",
+      "item3": "Offer or request services that are prohibited in Saudi Arabia",
+      "item4": "Interfere with the platform's security or proper functioning",
+      "item5": "Harass, abuse, or discriminate against other users",
+      "item6": "Circumvent the payment system or platform fees",
+      "item7": "Copy, modify, or distribute our intellectual property without permission"
     },
     "intellectual": {
       "title": "Intellectual Property",
-      "content": "The Azimah Tech name, logo, and all related trademarks, service marks, and logos are owned by Azimah Tech. You may not use these marks without our prior written permission."
+      "content": "The Azimah Tech name, logo, app design, and all related trademarks, service marks, and content are the exclusive property of Azimah Tech. Users may not use, copy, or distribute these materials without prior written permission. Service providers retain ownership of their content but grant us a license to display it on the platform."
     },
     "liability": {
       "title": "Limitation of Liability",
-      "content": "To the maximum extent permitted by law, Azimah Tech shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of our services. Our total liability shall not exceed the amount you paid for the services in question."
+      "content": "To the maximum extent permitted by Saudi law: (a) Azimah Tech acts only as an intermediary platform and is not liable for the quality, safety, or legality of services provided by third-party providers; (b) We are not liable for any indirect, incidental, special, consequential, or punitive damages; (c) Our total liability shall not exceed the amount you paid for the specific service in question; (d) We do not guarantee uninterrupted or error-free service availability."
     },
     "indemnification": {
       "title": "Indemnification",
-      "content": "You agree to indemnify and hold harmless Azimah Tech and its officers, directors, employees, and agents from any claims, damages, losses, or expenses arising from your use of the service or violation of these Terms."
+      "content": "You agree to indemnify, defend, and hold harmless Azimah Tech and its officers, directors, employees, and agents from any claims, damages, losses, liabilities, and expenses (including legal fees) arising from: (a) your use of our services; (b) your violation of these Terms; (c) your violation of any third-party rights; (d) any content you submit to the platform."
+    },
+    "disputes": {
+      "title": "Dispute Resolution",
+      "content": "Any disputes arising from these Terms or your use of our services shall be resolved as follows:",
+      "item1": "First, contact our support team to attempt informal resolution",
+      "item2": "If unresolved within 30 days, disputes may be submitted to mediation",
+      "item3": "Disputes that cannot be resolved through mediation shall be submitted to the competent courts in Jeddah, Saudi Arabia"
     },
     "governing": {
       "title": "Governing Law",
-      "content": "These Terms shall be governed by and construed in accordance with the laws of the Kingdom of Saudi Arabia. Any disputes shall be resolved in the courts of Jeddah, Saudi Arabia."
+      "content": "These Terms shall be governed by and construed in accordance with the laws of the Kingdom of Saudi Arabia, including but not limited to: the E-Commerce Law, Consumer Protection Law, Personal Data Protection Law, and Anti-Commercial Fraud Law. The competent courts in Jeddah shall have exclusive jurisdiction over any disputes."
     },
     "termination": {
       "title": "Termination",
-      "content": "We may terminate or suspend your account and access to our services immediately, without prior notice, for any reason, including breach of these Terms. Upon termination, your right to use the services will cease immediately."
+      "content": "We may terminate or suspend your account and access to our services: (a) immediately for violation of these Terms; (b) immediately for fraudulent or illegal activity; (c) with 30 days notice for any other reason. Upon termination, your right to use the services ceases immediately, but provisions regarding intellectual property, limitation of liability, and governing law survive."
+    },
+    "force": {
+      "title": "Force Majeure",
+      "content": "Neither party shall be liable for delays or failures in performance resulting from circumstances beyond their reasonable control, including natural disasters, war, terrorism, government actions, or pandemic-related restrictions."
     },
     "changes": {
       "title": "Changes to Terms",
-      "content": "We reserve the right to modify these Terms at any time. We will notify users of any material changes via the app or email. Continued use of the service after changes constitutes acceptance of the new Terms."
+      "content": "We reserve the right to modify these Terms at any time. We will notify users of material changes via the app or email at least 30 days before they take effect. Continued use of the service after changes constitutes acceptance of the new Terms. If you disagree with changes, you may close your account before the effective date."
     },
     "contact": {
       "title": "Contact Us",
-      "content": "If you have any questions about these Terms, please contact us:",
+      "content": "For any questions about these Terms of Service, please contact us:",
       "email": "Email",
-      "address": "Address"
+      "phone": "Phone",
+      "address": "Address",
+      "cr": "Commercial Registration"
     }
   }
 }
